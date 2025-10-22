@@ -279,6 +279,12 @@ main > section:nth-child(2) > div > div:first-child > p {
   margin: 0 auto;
 }
 
+/* Grid de Features */
+main > section:nth-child(2) footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px
+}
 
 /* Feature Cards */
 /* article {
@@ -320,20 +326,26 @@ footer {
 }
 
 article {
-    background-color: var(--card-bg);
-    padding: 2rem;
-    margin-bottom: 16px;
-    border-radius: 0.5rem;
-    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: var(--card-bg);
+  padding: 2rem;
+  margin-bottom: 16px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
 
-    svg {
-        color: var(--primary-light);
-        background-color: rgba(0, 153, 255, 0.3);
-        border-radius: 100%;
-        padding: 16px;
-    }
+  svg {
+    color: var(--primary-light);
+    background: rgba(0, 153, 255, .3);
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    padding: 16px;
+  }
 
+  p {
+    color: var(--text-muted);
+  }
+
+  h3 {
+    font-weight: 500;
+  }
 }
-
-
-
